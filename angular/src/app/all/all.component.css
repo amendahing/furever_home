@@ -1,0 +1,34 @@
+#all{
+    margin-left: 50px;
+}
+
+.pet-info img {
+    border-radius: 15px;
+    max-height: 200px;
+    max-width: 190px;
+    margin-top: 20px
+
+}
+
+.pet-info {
+    height: 440px;
+    border: #888b82 solid 1px;
+    width: 221px;
+    border-radius: 10px;
+    display: inline-block;
+    /* padding: 25px; */
+    vertical-align: top;
+    background-color: #f5f4f2;
+    margin-right: 17px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 12px;
+    text-transform: capitalize;
+}

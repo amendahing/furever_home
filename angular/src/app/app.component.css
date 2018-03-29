@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+   /* background-image: url('/assets/root.jpeg');  */
+   background-color: #f6fbfe;
+   font-family: 'Biryani', sans-serif;
+}
+
+.nav-bar {
+    background-color: #00adde;
+    color: white;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    /* border: black 1px solid; */
+}
+
+#nav-bar-left{
+    /* background-color: #009cf7; */
+    display: inline;
+    float: left;
+    background-image: url('https://cdn3.iconfinder.com/data/icons/real-estate-2/500/home_house_real_estate_apartment_building_heart_love-512.png');
+    background-size: 40px;
+    background-position: 6px 0px;
+    background-repeat: no-repeat;
+    padding-left: 53px;
+    padding-top: 10px;
+}
+
+/* #nav-bar-left img{
+    width: 40px;
+} */
+
+#nav-bar-right{
+    margin-top: 10px;
+    margin-right: 20px;
+    display: inline;
+    float: right;
+    font-family: 'Lato', sans-serif;
+}
+
+#nav-bar-right a {
+    margin-left: 20px;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar p {
+    display: inline;
+}

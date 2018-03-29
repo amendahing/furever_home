@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>furever</title>
+        <link href="https://fonts.googleapis.com/css?family=Biryani|Lato" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="nav-bar">
+            <div id="nav-bar-left">
+                <!-- <img src="./assets/icon.png" alt=""> -->
+                <p>furever home</p>
+            </div>
+
+            <div id="nav-bar-right">
+                <a href="#">Home</a>
+                <a [routerLink]="['random_pet']">pet of the day</a>
+                <a href="#">liked</a>
+                <a href="#">login</a>
+            </div>
+
+        </div>
+
+
+
+        <router-outlet></router-outlet>
+
+    </body>
+</html>
+
+
+
+
+        <!-- <h1>Dogs nearby!</h1>
+
+        <div class="pet-info" *ngFor="let x of pets">
+            <img width="250px" src="{{x.media.photos.photo[3].$t}}" alt="">
+            <h3>{{ x.name.$t }}</h3>
+            <h4>{{ x.animal.$t }}</h4>
+            <p></p>
+            <p>{{ x.id.$t }}</p>
+            <button (click)="petDetail(x.id.$t)">Click for more info</button>
+        </div> -->

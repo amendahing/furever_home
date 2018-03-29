@@ -1,0 +1,40 @@
+<!-- <p> {{ zipcode | json }}  {{ pet_type | json }}</p> -->
+<form (submit)="newRetrieval()">
+    <input type="text" name="new_zipcode" placeholder="Zipcode" [(ngModel)]="new_zipcode" >
+    <input type="text" name="new_pet_type" value="Dog or Cat" [(ngModel)]="new_pet_type" >
+    <input type="submit" name="" value="Submit">
+</form>
+
+
+
+<div id="all">
+
+    <h1>{{pet_type}}s nearby!</h1>
+    <div class="pet-info" *ngFor="let x of pets">
+        <img src="{{x.media.photos.photo[3].$t}}" alt="">
+        <h2>{{ x.name.$t }}</h2>
+        <p>{{ x.breeds.breed.$t }}</p>
+        <p>{{ x.age.$t }} | {{x.sex.$t}}</p>
+        <p>{{ x.contact.city.$t }}, {{x.contact.state.$t}}</p>
+
+        <button (click)="petDetail(x.id.$t)">Click for more info</button>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!-- <div id="breeds" *ngFor="let y of x['breeds']['breed']">
+<p>{{ y.$t }}</p>
+</div> -->
+<!-- <h4>{{ x.animal.$t }}</h4> -->
+<!-- <h4>{{x.breeds.breed[0].$t }}</h4> -->
+<!-- <div id="breed" *ngFor="let y of x.breeds">
+<p>{{y.breed}}</p>
+</div> -->
+<!-- <h4>{{ x.breeds.breed.$t }}</h4> -->
+<!-- <p>{{ x.id.$t }}</p> -->
