@@ -45,6 +45,15 @@ export class HttpService {
        });
     }
 
+    getDogBreed() {
+        var url = "http://api.petfinder.com/breed.list?key=14614b2ec6590088e2c02f050810225b&animal=dog&output=basic&format=json&callback=JSONP_CALLBACK"
+        return this.jsonp.get(url)
+        .map(function(res: Response){
+           return res.json() || {};
+        }).catch(function(error: any){return Observable.throw(error);
+       });
+    }
+
 
 
 

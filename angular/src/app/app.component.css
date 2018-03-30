@@ -5,12 +5,12 @@
 
 body {
    /* background-image: url('/assets/root.jpeg');  */
-   background-color: #f6fbfe;
+   background-color: #f6fafe;
    font-family: 'Biryani', sans-serif;
 }
 
 .nav-bar {
-    background-color: #00adde;
+    background-color: #36a3da;
     color: white;
     width: 100%;
     height: 40px;

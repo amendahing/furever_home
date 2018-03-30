@@ -1,40 +1,69 @@
-<!-- <p> {{ zipcode | json }}  {{ pet_type | json }}</p> -->
-<form (submit)="newRetrieval()">
-    <input type="text" name="new_zipcode" placeholder="Zipcode" [(ngModel)]="new_zipcode" >
-    <input type="text" name="new_pet_type" value="Dog or Cat" [(ngModel)]="new_pet_type" >
-    <input type="submit" name="" value="Submit">
-</form>
+<head></head>
 
+<body>
 
+    <div class="center">
 
-<div id="all">
+        <form (submit)="retrievePets()">
+            <input type="text" name="zipcode" placeholder="Zipcode" [(ngModel)]="zipcode" >
 
-    <h1>{{pet_type}}s nearby!</h1>
-    <div class="pet-info" *ngFor="let x of pets">
-        <img src="{{x.media.photos.photo[3].$t}}" alt="">
-        <h2>{{ x.name.$t }}</h2>
-        <p>{{ x.breeds.breed.$t }}</p>
-        <p>{{ x.age.$t }} | {{x.sex.$t}}</p>
-        <p>{{ x.contact.city.$t }}, {{x.contact.state.$t}}</p>
+            <select id="main-select" name="pet_type" [(ngModel)]="pet_type" placeholder="Animal Type">
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="horse">Horse</option>
+                <option value="reptile">Reptile</option>
+                <option value="smallfurry">Smol/furry</option>
+            </select>
 
-        <button (click)="petDetail(x.id.$t)">Click for more info</button>
+            <input class="submit" type="submit" name="" value="Submit">
+            <!-- <button id="filter" (click)="expandFilter()">more filters</button> -->
+
+            <div id="more-filter">
+                <select name="sex">
+                    <option value="">All Gender</option>
+                    <option value="f">female</option>
+                    <option value="m">male</option>
+                </select>
+
+                <select name="age">
+                    <option value="">All Ages</option>
+                    <option value="baby">baby</option>
+                    <option value="young">young</option>
+                    <option value="adult">adult</option>
+                    <option value="senior">senior</option>
+                </select>
+
+                <select name="breed">
+                    <option value="">All Breed</option>
+                    <option value="a">breed A</option>
+                    <option value="b">breed B</option>
+                </select>
+
+                <select name="size">
+                    <option value="">All Sizes</option>
+                    <option value="a">small</option>
+                    <option value="b">medium</option>
+                    <option value="b">large</option>
+                    <option value="b">extra large</option>
+                </select>
+            </div>
+
+        </form>
     </div>
 
-</div>
+
+    <div id="all">
+        <h1>{{pet_type}}s nearby!</h1>
+        <div class="pet-info" *ngFor="let x of pets">
+            <img src="{{x.media.photos.photo[3].$t}}" alt="">
+            <h2>{{ x.name.$t }}</h2>
+            <p>{{ x.breeds.breed.$t }}</p>
+            <p>{{ x.age.$t }} | {{x.sex.$t}}</p>
+            <p>{{ x.contact.city.$t }}, {{x.contact.state.$t}}</p>
+            <button (click)="petDetail(x.id.$t)">Click for more info</button>
+        </div>
+    </div>
 
 
 
-
-
-
-
-<!-- <div id="breeds" *ngFor="let y of x['breeds']['breed']">
-<p>{{ y.$t }}</p>
-</div> -->
-<!-- <h4>{{ x.animal.$t }}</h4> -->
-<!-- <h4>{{x.breeds.breed[0].$t }}</h4> -->
-<!-- <div id="breed" *ngFor="let y of x.breeds">
-<p>{{y.breed}}</p>
-</div> -->
-<!-- <h4>{{ x.breeds.breed.$t }}</h4> -->
-<!-- <p>{{ x.id.$t }}</p> -->
+</body>

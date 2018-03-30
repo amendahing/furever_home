@@ -12,6 +12,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 export class RandomComponent implements OnInit {
     pet: any;
     name: any;
+    description: any;
 
     constructor(
         private _http: HttpService,
@@ -30,7 +31,10 @@ export class RandomComponent implements OnInit {
             // console.log("Pet info:", data['petfinder']['pet'])
             // console.log("Name:", data['petfinder']['pet']['name'].$t)
             this.pet = data['petfinder']['pet']
-            this.name = data['petfinder']['pet']['name'].st
+            console.log(this.pet)
+            this.name = data['petfinder']['pet']['name'].$t
+            this.description = data['petfinder']['pet']['description']
+            console.log(data['petfinder']['pet']['description'].$t)
         })
 
     }

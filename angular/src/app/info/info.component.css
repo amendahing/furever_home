@@ -3,46 +3,32 @@
     width: 80%;
     margin: 10px auto 20px;
     padding: 20px;
-
 }
 
 
-.gallery {
-  width: 640px;
-  margin: 0 auto;
-  padding: 5px;
-  background: #fff;
-  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+img {
+    width: 28%;
+    margin-right: 10px;
+    vertical-align: top;
+    margin-bottom: 25px;
 }
 
-.gallery > div {
-  position: relative;
-  float: left;
-  padding: 5px;
+#description {
+    border: black solid 1px;
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    margin-right: 25px;
 }
 
-.gallery > div > img {
-  display: block;
-  width: 200px;
-  transition: .1s transform;
-  transform: translateZ(0); /* hack */
+#content {
+    height: 580px;
+    overflow: auto;
 }
 
-.gallery > div:hover {
-  z-index: 1;
-}
-
-.gallery > div:hover > img {
-  transform: scale(1.7,1.7);
-  transition: .3s transform;
-}
-
-.cf:before, .cf:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-
-.cf:after {
-  clear: both;
+#info {
+    border: black solid 1px;
+    display: inline-block;
+    vertical-align: top;
+    width: 35%
 }

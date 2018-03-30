@@ -52,6 +52,10 @@ export class AllComponent implements OnInit {
       this._router.navigate(['pet_info/'+id]);
   }
 
+  expandFilter() {
+      console.log("Expanding filter!")
+  }
+
 }
 
 

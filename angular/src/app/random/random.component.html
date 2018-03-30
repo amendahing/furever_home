@@ -1,5 +1,18 @@
-<h3>Pet of the day!</h3>
-<img src="{{pet.media.photos.photo[3].$t}}" alt="">
-<p>Name: {{ pet.name.$t }}</p>
-<p>Age: {{ pet.age.$t }}</p>
-<p>Breed: {{ pet.breeds.breed.$t }}</p>
+
+<div id="center">
+
+    <h3>Pet of the day!</h3>
+    <h4>{{ pet.name.$t }}</h4>
+    <img src="{{pet.media.photos.photo[3].$t}}" alt="">
+    <img src="{{pet.media.photos.photo[8].$t}}" alt="">
+    <p> {{pet.sex.$t}}  </p>
+    <p>  {{ pet.age.$t }} </p>
+    <p>  {{ pet.breeds.breed.$t }}</p>
+    <p> {{pet.contact.location.$t}} </p>
+
+    <div id="content">
+        <p>{{ pet.description.$t }}</p>
+        <p> {{ description.$t }}</p>
+    </div>
+
+</div>

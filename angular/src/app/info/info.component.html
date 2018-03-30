@@ -1,22 +1,36 @@
 
 <div id="pet-info">
 
-    <div class="gallery cf">
-        <div>
-            <img src="{{pet.media.photos.photo[3].$t}}" />
+    <div class="gallery">
+
+        <img src="{{pet.media.photos.photo[2].$t}}" />
+
+        <img src="{{pet.media.photos.photo[7].$t}}" />
+
+        <img src="{{pet.media.photos.photo[12].$t}}" />
+
+    </div>
+
+    <div class="main">
+
+        <div id="description">
+            <h1>{{ pet.name.$t }}</h1>
+            <div id="content">
+                <p> {{ pet.description.$t }} </p>
+
+            </div>
         </div>
-        <div>
-            <img src="{{pet.media.photos.photo[8].$t}}" />
-        </div>
-        <div>
-            <img src="{{pet.media.photos.photo[13].$t}}" />
+
+        <div id="info">
+            <h4>Breed:</h4>
+                <p>{{ pet.breeds.breed.$t }}</p>
+            <h4>Age/Gender:</h4>
+                <p>{{ pet.age.$t }} | {{ pet.sex.$t }}</p>
+            <h4>Location:</h4>
+                <p>{{ pet.contact.city.$t }}, {{ pet.contact.state.$t }}</p>
         </div>
 
     </div>
 
-    <p>{{ pet.name.$t }}</p>
-    <p>{{ pet.age.$t }} | {{ pet.sex.$t }}</p>
-    <p>{{ pet.contact.city.$t }}</p>
-    <p> {{ pet.description.$t }} </p>
 
 </div>

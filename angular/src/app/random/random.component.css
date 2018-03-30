@@ -1,0 +1,14 @@
+#center {
+    text-align: center;
+}
+
+img {
+    border-radius: 14px;
+}
+
+#content {
+    width: 70%;
+    text-align: left;
+    margin-left: 80px;
+
+}
