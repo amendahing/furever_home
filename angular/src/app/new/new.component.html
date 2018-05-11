@@ -3,35 +3,35 @@
 </head>
 
 <body>
-
-
     <div id="banner">
+        <!-- <img src="../assets/root-resize.jpg"> -->
+            <div id="search-pet">
+                <h1>Find your pet today!</h1>
 
-        <div id="search-pet">
-            <h1>Find your pet today!</h1>
-
-            <div class="center">
-                <!-- <p> {{ zipcode | json }}  {{ pet_type | json }}</p> -->
-                <form (submit)="retrievePets()">
-                    <input type="text" name="zipcode" placeholder="Zipcode" [(ngModel)]="zipcode" >
+                <div class="center">
+                    <!-- <p> {{ zipcode | json }}  {{ pet_type | json }}</p> -->
+                    <form (submit)="retrievePets()">
+                        <input type="text" name="zipcode" placeholder="Zipcode" [(ngModel)]="zipcode" >
 
 
-                    <!-- <label for="pet_type">Pet Type</label> -->
-                    <select name="pet_type" [(ngModel)]="pet_type" placeholder="Animal Type">
-                    <!-- <select name="pet_type"> -->
-                        <option value="cat">Cat</option>
-                        <option value="dog">Dog</option>
-                        <option value="horse">Horse</option>
-                        <option value="reptile">Reptile</option>
-                        <option value="smallfurry">Smol/furry</option>
-                    </select>
+                        <!-- <label for="pet_type">Pet Type</label> -->
+                        <select name="pet_type" [(ngModel)]="pet_type" placeholder="Animal Type">
+                            <!-- <select name="pet_type"> -->
+                            <option value="cat">Cat</option>
+                            <option value="dog">Dog</option>
+                            <option value="horse">Horse</option>
+                            <option value="reptile">Reptile</option>
+                            <option value="smallfurry">Smol/furry</option>
+                        </select>
 
-                    <input class="button" type="submit" name="" value="Submit">
-                </form>
+                        <input class="button" type="submit" name="" value="Submit">
+                    </form>
+                </div>
             </div>
 
-        </div>
-        <img src="../assets/root.jpeg">
+
+
+
     </div>
 
 

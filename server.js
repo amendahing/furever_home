@@ -11,19 +11,6 @@ app.use(bodyParser.json());
 app.use(express.static( __dirname + '/angular/dist' ));
 mongoose.connect('mongodb://localhost/bb_mean');
 
-//
-// petfinder.getBreedList('cat', function(err, breeds) {
-//   console.log(breeds)
-// });
-
-// petfinder.getRandomPet('full', function(err, data) {
-//   console.log(data)
-// });
-
-
-
-
-
 app.all("*", (req, res, next) => { res.sendFile(path.resolve("./angular/dist/index.html"))});
 
 // listen on this port

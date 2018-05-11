@@ -1,5 +1,5 @@
 #pet-info{
-    border: black solid 1px;
+    /* border: black solid 1px; */
     width: 80%;
     margin: 10px auto 20px;
     padding: 20px;
@@ -14,7 +14,7 @@ img {
 }
 
 #description {
-    border: black solid 1px;
+    /* border: black solid 1px; */
     display: inline-block;
     vertical-align: top;
     width: 60%;
@@ -27,8 +27,15 @@ img {
 }
 
 #info {
-    border: black solid 1px;
+    /* border: black solid 1px; */
     display: inline-block;
     vertical-align: top;
-    width: 35%
+    width: 35%;\
+    margin-top: 115px;
+}
+
+h4 {
+    color: #00a5d7;
+    font-weight: bold;
+    display: inline;
 }

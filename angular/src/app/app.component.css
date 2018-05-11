@@ -15,6 +15,7 @@ body {
     width: 100%;
     height: 40px;
     box-sizing: border-box;
+    z-index: 2;
     /* border: black 1px solid; */
 }
 
@@ -53,4 +54,9 @@ body {
 
 .nav-bar p {
     display: inline;
+}
+
+#block{
+    /* background-color: yellow; */
+    min-height: 92vh;
 }

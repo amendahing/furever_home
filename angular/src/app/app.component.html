@@ -10,22 +10,22 @@
 
         <div class="nav-bar">
             <div id="nav-bar-left">
-                <!-- <img src="./assets/icon.png" alt=""> -->
+                <!-- <img src="./assets/icon.png" alt="">  -->
                 <p>furever home</p>
             </div>
 
             <div id="nav-bar-right">
                 <a href="#">Home</a>
                 <a [routerLink]="['random_pet']">pet of the day</a>
-                <a href="#">liked</a>
-                <a href="#">login</a>
             </div>
 
         </div>
 
 
+        <div id="block">
+            <router-outlet></router-outlet>
 
-        <router-outlet></router-outlet>
+        </div>
 
     </body>
 </html>

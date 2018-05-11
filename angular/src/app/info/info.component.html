@@ -22,12 +22,11 @@
         </div>
 
         <div id="info">
-            <h4>Breed:</h4>
-                <p>{{ pet.breeds.breed.$t }}</p>
-            <h4>Age/Gender:</h4>
-                <p>{{ pet.age.$t }} | {{ pet.sex.$t }}</p>
-            <h4>Location:</h4>
-                <p>{{ pet.contact.city.$t }}, {{ pet.contact.state.$t }}</p>
+            <h4>Breed:</h4> <span> {{ pet.breeds.breed.$t }}</span>
+            <br>
+            <h4>Age/Gender:</h4><span> {{ pet.age.$t }} | {{ pet.sex.$t }}</span>
+                <br>
+            <h4>Location:</h4><span> {{ pet.contact.city.$t }}, {{ pet.contact.state.$t }}</span>
         </div>
 
     </div>
