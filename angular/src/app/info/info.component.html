@@ -1,4 +1,7 @@
 
+<body>
+
+
 <div id="pet-info">
 
     <div class="gallery">
@@ -8,6 +11,14 @@
         <img src="{{pet.media.photos.photo[7].$t}}" />
 
         <img src="{{pet.media.photos.photo[12].$t}}" />
+
+        <!-- <div id="info">
+            <h4>Breed:</h4> <span> {{ pet.breeds.breed.$t }}</span>
+            <br>
+            <h4>Age/Gender:</h4><span> {{ pet.age.$t }} | {{ pet.sex.$t }}</span>
+                <br>
+            <h4>Location:</h4><span> {{ pet.contact.city.$t }}, {{ pet.contact.state.$t }}</span>
+        </div> -->
 
     </div>
 
@@ -25,11 +36,34 @@
             <h4>Breed:</h4> <span> {{ pet.breeds.breed.$t }}</span>
             <br>
             <h4>Age/Gender:</h4><span> {{ pet.age.$t }} | {{ pet.sex.$t }}</span>
-                <br>
+            <br>
+            <h4></h4>
+
+            <hr>
+
+            <h4>Email:</h4><span> {{pet.contact.email.$t }} </span>
+            <br>
+            <h4>Phone:</h4><span> {{pet.contact.phone.$t }} </span>
+            <br>
             <h4>Location:</h4><span> {{ pet.contact.city.$t }}, {{ pet.contact.state.$t }}</span>
+        </div>
+
+        <div id="map">
+            <agm-map [latitude]="lat" [longitude]="lng">
+              <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+            </agm-map>
         </div>
 
     </div>
 
 
 </div>
+
+
+
+<!-- <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyComDx4blD1hD6FgUej0R-NfXNJMiDWAx4&callback=initMap">
+</script> -->
+
+
+</body>

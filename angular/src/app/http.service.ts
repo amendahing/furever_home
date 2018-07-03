@@ -54,6 +54,11 @@ export class HttpService {
        });
     }
 
+    getCoordinates(city) {
+        var url = "https://maps.googleapis.com/maps/api/geocode/json?address="+ city + "&key=AIzaSyComDx4blD1hD6FgUej0R-NfXNJMiDWAx4"
+        return this._http.get(url)
+    }
+
 
 
 
